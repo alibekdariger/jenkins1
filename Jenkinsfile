@@ -5,14 +5,14 @@ pipeline {
 
         stage ('Build') {
             steps {
-            sh 'docker build -t jenkins_example .'
-            sh 'docker tag jenkins_example alibekdariger/jenkins1:v1'
+            sh 'sudo docker build -t jenkins_example .'
+            sh 'sudo docker tag jenkins_example alibekdariger/jenkins1:v1'
         }
         }
 
         stage ('Push') {
             steps{
-            sh 'docker push alibekdariger/jenkins1:v1'
+            sh 'sudo docker push alibekdariger/jenkins1:v1'
         
             }}
 
