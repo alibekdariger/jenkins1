@@ -7,7 +7,7 @@ RUN apt-get -y install python3 python3-pip git
 RUN apt-get -y install nginx
 
 RUN git clone https://github.com/django-ve/django-helloworld
-
+    
 WORKDIR /django-helloworld
 
 RUN pip3 install -r requirements.txt
